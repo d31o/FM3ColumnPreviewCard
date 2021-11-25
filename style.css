@@ -1,0 +1,156 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    font-size: 15px;
+}
+
+.vehicle-card {
+    margin: auto;
+    height: 55%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+.sedans {
+    width: 33%;
+    height: 100%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:45px 50px;
+}
+
+.suvs {
+    width: 33%;
+    height: 100%;
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:45px 50px;
+}
+
+.luxury {
+    width: 33%;
+    height: 100%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:45px 50px;
+}
+
+.sedan-title,
+.suv-title,
+.luxury-title {
+    position: relative;
+    bottom: 25px;
+}
+
+.sedan-description,
+.suv-description,
+.luxury-description {
+    position: relative;
+    bottom: 50px;
+}
+
+.sedan-learn-more {
+    color: hsl(31, 77%, 52%);
+    height: 40px;
+    width: 125px;
+}
+
+.suv-learn-more {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-learn-more {
+    color: hsl(179, 100%, 13%)
+}
+
+.vehicle-card h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 1;
+}
+
+.vehicle-card p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.vehicle-card a {
+    text-decoration: none;
+    width: 125px;
+    height: 40px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn {
+    width: 125px;
+    height: 40px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sedan-learn-more:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    height: 40px;
+    width: 125px;
+    border: solid 1px hsl(0, 0%, 95%);
+    transform: scale(1.2);
+}
+
+.suv-learn-more:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    cursor: pointer;
+    height: 40px;
+    width: 125px;
+    border: solid 1px hsl(0, 0%, 95%);
+    transform: scale(1.2);
+}
+
+.luxury-learn-more:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+    height: 40px;
+    width: 125px;
+    border: solid 1px hsl(0, 0%, 95%);
+    transform: scale(1.2);
+}
